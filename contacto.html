@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+       <header>
+        <img src="img/RopaTrendy.png" alt="" width="200" height="100" >
+        <nav class="nav">
+            <ul class="nav-list" id="nav-list">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="novedades.html">Novedades</a>
+                <a href="tallas.html">Guía de Tallas</a>
+                <a href="contacto.html">Contacto</a>
+            </ul>
+        </nav>
+        <div class="menu_toggle" id="menu_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <body>
+
+    <main>
+        <section>
+            <h1>Contáctanos</h1><br>
+            <p>¿Tienes alguna consulta o sugerencia? Escríbenos y con gusto te atenderemos.</p>
+            <form class="eg" onsubmit="return validarFormulario()">
+            <fieldset>
+                <div class="contenedor-contacto">
+                    <div class="formulario-contacto">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <p id="mensajeEmail"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Teléfono:</label>
+                            <input type="number" id="phone" name="phone" required>
+                            <p id="mensajeTelefono"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensajeTexto">Mensaje:</label>
+                            <textarea id="mensajeTexto" name="mensaje" rows="5" required></textarea>
+                        </div>
+
+                        <p id="mensaje"></p>
+                        <button type="submit">Enviar Mensaje</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        </section>
+        <section>
+            <h2>Información de contacto</h2>
+            <ul>
+                <li>Dirección: Av. Los Fresnos 125, La Molina, Lima</li>
+                <li>Teléfono: (01) 234-5678</li>
+                <li>Email: contacto@RopaTrendy.pe</li>
+            </ul>
+        </section>
+    </main>
+</body>
+<script src="js/scrip.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
