@@ -9,8 +9,8 @@
 </head>
 
 <body>
-       <header>
-        <img src="img/RopaTrendy.png" alt="" width="200" height="100" >
+    <header>
+        <img src="img/RopaTrendy.png" alt="" width="200" height="100">
         <nav class="nav">
             <ul class="nav-list" id="nav-list">
                 <a href="index.html">Inicio</a>
@@ -28,57 +28,85 @@
             <span></span>
         </div>
     </header>
+
     <body>
 
-    <main>
-        <section>
-            <h1>Contáctanos</h1><br>
-            <p>¿Tienes alguna consulta o sugerencia? Escríbenos y con gusto te atenderemos.</p>
-            <form class="eg" onsubmit="return validarFormulario()">
-            <fieldset>
-                <div class="contenedor-contacto">
-                    <div class="formulario-contacto">
-                        <div class="form-group">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                        </div>
+        <main>
+            <section>
+                <h1>Contáctanos</h1><br>
+                <p>¿Tienes alguna consulta o sugerencia? Escríbenos y con gusto te atenderemos.</p>
+                <form class="eg" onsubmit="return validarFormulario()">
+                    <section class="form-contacto">
+                        <form>
+                            <div class="grupo">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                            <p id="mensajeEmail"></p>
-                        </div>
+                            <div class="grupo">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="phone">Teléfono:</label>
-                            <input type="number" id="phone" name="phone" required>
-                            <p id="mensajeTelefono"></p>
-                        </div>
+                            <div class="grupo">
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono">
+                            </div>
 
-                        <div class="form-group">
-                            <label for="mensajeTexto">Mensaje:</label>
-                            <textarea id="mensajeTexto" name="mensaje" rows="5" required></textarea>
-                        </div>
+                            <div class="grupo">
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea id="mensaje" name="mensaje" required></textarea>
+                            </div>
 
-                        <p id="mensaje"></p>
-                        <button type="submit">Enviar Mensaje</button>
+                            <p id="mensaje"></p>
+                            <button type="submit">Enviar Mensaje</button>
+                        </form>
+                    </section>
                     </div>
-                </div>
-            </fieldset>
-        </form>
-        </section>
-        <section>
-            <h2>Información de contacto</h2>
-            <ul>
-                <li>Dirección: Av. Los Fresnos 125, La Molina, Lima</li>
-                <li>Teléfono: (01) 234-5678</li>
-                <li>Email: contacto@RopaTrendy.pe</li>
-            </ul>
-        </section>
-    </main>
-</body>
-<script src="js/scrip.js"></script>
-<script src="js/script.js"></script>
+                    <section>
+            </section>
+                </form>
+            </section>
+            
+        </main>
+    </body>
+
+      <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>SOBRE NOSOTROS</h3>
+      <p>Somos una marca con más de 5 años en moda urbana. Ropa urbana. Hecho con amor por manos peruanas.</p>
+      <p><a href="#">Contáctanos</a></p>
+    </div>
+
+    <div class="footer-col">
+      <h3>NAVEGAR</h3>
+      <ul>
+        <li><a href="#">Términos del servicio</a></li>
+        <li><a href="#">Nuestras Tiendas</a></li>
+        <li><a href="#">Política de reembolso</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Libro de Reclamaciones</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>MARCAS POPULARES</h3>
+      <ul>
+        <li><a href="#">H & M</a></li>
+        <li><a href="#">Polo</a></li>
+        <li><a href="#">Ver todo</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>INFORMACIÓN</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Los Telares 281<br>Urbanización Vulcano, Ate, Lima</p>
+      <p><i class="fas fa-phone"></i> +51 999 999 999</p>
+    </div>
+  </div>
+</footer>
+    <script src="js/scrip.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -332,6 +332,79 @@ input[type="submit"]:hover {
   font-family: 'Segoe UI', sans-serif;
 }
 
+.form-contacto {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.form-contacto h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.form-contacto p {
+  color: #444;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.form-contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-contacto .grupo {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-contacto label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.form-contacto textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.form-contacto button {
+  padding: 12px 24px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-contacto button:hover {
+  background-color: #333;
+}
+
+
 .ofertas-ropa h2 {
   font-size: 32px;
   color: #111;
