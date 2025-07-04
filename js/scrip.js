@@ -1,5 +1,15 @@
-const nav_cel = document.getElementById('menu_toggle');
-const navlist = document.getElementById('nav-list');
+ const menuButton = document.getElementById('menuButton');
+  const menuCollapse = document.getElementById('menuCollapse');
+
+  menuCollapse.addEventListener('show.bs.collapse', () => {
+    menuButton.classList.add('d-none');
+  });
+
+  // Si quieres que reaparezca el botón al cerrar el menú, usa esto también:
+  menuCollapse.addEventListener('hide.bs.collapse', () => {
+    menuButton.classList.remove('d-none');
+  });
+
 
 nav_cel.addEventListener('click', () => {
     navlist.classList.toggle('active');

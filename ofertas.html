@@ -2,32 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-      <header>
-        <img src="img/RopaTrendy.png" alt="" width="200" height="100" >
-        <nav class="nav">
-            <ul class="nav-list" id="nav-list">
-                <a href="index.html">Inicio</a>
-                <a href="productos.html">Productos</a>
-                <a href="ofertas.html">Ofertas</a>
-                <a href="novedades.html">Novedades</a>
-                <a href="tallas.html">Guía de Tallas</a>
-                <a href="contacto.html">Contacto</a>
-            </ul>
-        </nav>
-        <div class="menu_toggle" id="menu_toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
+  <header class="headerBar">
+    <img src="img/TRENDY2.png" alt="Logo Ropa Trendy" width="300" height="100">
+
+    <!-- Botón Menú (solo visible en móviles) -->
+    <button class="btn btn-outline-primary d-md-none" type="button" data-bs-toggle="collapse"
+      data-bs-target="#menuCollapse" aria-expanded="false" aria-controls="menuCollapse" id="menuButton">
+      Menú
+    </button>
+
+    <!-- Menú colapsable -->
+    <div class="collapse collapse-horizontal d-md-flex" id="menuCollapse">
+      <nav class="nav">
+        <ul class="letrasMenu">
+          <li><a class="nav-link text-dark fw-bold" href="index.html">Inicio</a></li>
+          <li><a class="nav-link text-dark fw-bold" href="productos.html">Productos</a></li>
+          <li><a class="nav-link text-dark fw-bold" href="ofertas.html">Ofertas</a></li>
+          <li><a class="nav-link text-dark fw-bold" href="novedades.html">Novedades</a></li>
+          <li><a class="nav-link text-dark fw-bold" href="tallas.html">Guía de Tallas</a></li>
+          <li><a class="nav-link text-dark fw-bold" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
     <section class="ofertas-ropa">
   <h2>Ofertas de Ropa</h2>
   <div class="contenedor-productos">
@@ -60,7 +67,56 @@
       </p>
       <a href="https://wa.me/+51979994812?text=Hola quiero Comprar la Casaca Streetwear" target="_blank"><button type="button">Comprar</button></a>
     </div>
+
+    <div class="card-oferta">
+      <img src="img/oferta4.jpeg" alt="oferta4">
+      <h3>oferta4</h3>
+      <p class="precio">
+        <span class="antes">S/ 350.90</span>
+        <span class="ahora">S/ 210.90</span>
+      </p>
+      <a href="https://wa.me/+51979994812?text=Hola quiero Comprar la oferta4" target="_blank"><button type="button">Comprar</button></a>
+    </div>
+
+    <div class="card-oferta">
+      <img src="img/oferta5.jpeg" alt="oferta5">
+      <h3>oferta5</h3>
+      <p class="precio">
+        <span class="antes">S/ 340.90</span>
+        <span class="ahora">S/ 200.90</span>
+      </p>
+      <a href="https://wa.me/+51979994812?text=Hola quiero Comprar la oferta5" target="_blank"><button type="button">Comprar</button></a>
+    </div>
+     <div class="card-oferta">
+      <img src="img/oferta6.jpeg" alt="oferta6">
+      <h3>oferta6</h3>
+      <p class="precio">
+        <span class="antes">S/ 600.90</span>
+        <span class="ahora">S/ 359.90</span>
+      </p>
+      <a href="https://wa.me/+51979994812?text=Hola quiero Comprar la oferta6" target="_blank"><button type="button">Comprar</button></a>
+    </div>
+     <div class="card-oferta">
+      <img src="img/oferta7.jpeg" alt="oferta7">
+      <h3>oferta7</h3>
+      <p class="precio">
+        <span class="antes">S/ 363.90</span>
+        <span class="ahora">S/ 209.90</span>
+      </p>
+      <a href="https://wa.me/+51979994812?text=Hola quiero Comprar la oferta7" target="_blank"><button type="button">Comprar</button></a>
+    </div>
+     <div class="card-oferta">
+      <img src="img/oferte8.jpeg" alt="oferta8">
+      <h3>oferta8</h3>
+      <p class="precio">
+        <span class="antes">S/ 356.90</span>
+        <span class="ahora">S/ 356.90</span>
+      </p>
+      <a href="https://wa.me/+51979994812?text=Hola quiero Comprar la oferta8" target="_blank"><button type="button">Comprar</button></a>
+    </div>
   </div>
+
+  
 </section>
 
 <script src="js/scrip.js"></script>
@@ -93,6 +149,7 @@
         <li><a href="#">Ver todo</a></li>
       </ul>
     </div>
+  
     <div class="footer-col">
       <h3>INFORMACIÓN</h3>
       <p><i class="fas fa-map-marker-alt"></i> Los Telares 281<br>Urbanización Vulcano, Ate, Lima</p>
@@ -100,4 +157,5 @@
     </div>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
