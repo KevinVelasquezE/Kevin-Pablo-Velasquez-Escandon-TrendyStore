@@ -146,7 +146,7 @@ input[type="submit"]:hover {
   margin-right: 6px;
 }
 
-/* estilo personalizado*/
+
 
 .carousel-item {
     height: 600px;
@@ -171,6 +171,7 @@ input[type="submit"]:hover {
         height: 250px; 
     }
 }
+
 .guia-tallas {
   max-width: 1000px;
   margin: 80px auto;
@@ -472,12 +473,52 @@ input[type="submit"]:hover {
 .headerBar {
   display: flex;                         
   align-items: center;                   
-  justify-content: space-between;       
-  padding: 1rem;     
+  justify-content: space-between;            
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); 
   position: relative;     
-  background-color: #f3eee2 ;              
+  background-color: #f3eee2 ; 
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  z-index: 1000;            
 }
+@media (max-width: 568px) {
+  #menuCollapse {
+    width: 100% !important; 
+    background-color: #f3eee2; 
+    padding: 10px 0;
+  }
+
+  .letrasMenu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 20px;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menuCollapse {
+    width: 100% !important; 
+    background-color: #f3eee2; 
+    padding: 10px 0;
+  }
+
+  .letrasMenu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 20px;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+}
+
 .letrasMenu {
   display: flex;
   flex-direction: column;
@@ -498,7 +539,7 @@ input[type="submit"]:hover {
 .letrasMenu li a {
   text-decoration: none;
   color: #1c1c1e;
-  font-size: 1.1rem;         /* Tamaño más grande */
+  font-size: 1.1rem;         
   font-weight: 600;
   padding: 8px 12px;
   border-radius: 8px;
