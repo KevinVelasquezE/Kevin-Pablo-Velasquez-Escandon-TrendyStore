@@ -587,6 +587,10 @@ input[type="submit"]:hover {
   background-color: #b38600; 
  }
 
+.navbar-toggle-icon{
+  color: #000;
+  background-color: #000;
+}
 
 #menuButton {
   border-color: black !important;   /* borde negro */
